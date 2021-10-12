@@ -1,6 +1,5 @@
 class TelegramWebhooksController < Telegram::Bot::UpdatesController
   include Telegram::Bot::UpdatesController::MessageContext
-  include Telegram::Bot::UpdatesController::Session
 
   before_action :street_lookup, except: %i[start! help! register_street!]
 
