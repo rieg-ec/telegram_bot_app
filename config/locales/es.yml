@@ -1,0 +1,39 @@
+es:
+  telegram_webhooks:
+    start:
+      content: |
+        Hola! los comandos disponibles son:
+
+          /register_street <nombre de la calle>
+          /car_arrived <numero> (opcional)
+          /car_left <numero> (opcional)
+          /street_state
+
+    street_lookup:
+      missing_street: |
+        Debes decirme en qué calle estás trabajando.
+
+        Ej:
+          /register_street Vitacura 4380
+    street_state:
+      content: |
+        El estado de %{street} es: %{occupied}/%{total}
+    register_street:
+      usage: |
+        Ingresa el comando seguido del nombre de la calle. 
+
+        Ej: 
+
+          /register_street Vitacura 4380
+      success: |
+        Calle registrada con exito. Ahora puedes comenzar a registrar llegadas o salidas de vehiculos con los comandos
+
+        /street_state
+        /car_arrived <numero> (opcional)
+        /car_left <numero> (opcional)
+
+        <numero> es 1 por defecto.
+    car_arrived:
+      success: Listo!
+    car_left:
+      success: Listo!
