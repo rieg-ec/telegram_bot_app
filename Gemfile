@@ -20,6 +20,7 @@ gem 'uglifier', '>= 1.3.0'
 gem 'coffee-rails', '~> 4.2'
 gem 'turbolinks', '~> 5'
 
+gem 'power_api'
 gem 'telegram-bot', '~> 0.14.4'
 
 group :development, :test do
@@ -27,6 +28,7 @@ group :development, :test do
   gem 'pry-byebug'
   gem 'pry-rails'
   gem 'rspec-rails', '~> 4.0.0'
+  gem 'rswag-specs'
   gem 'rubocop'
   gem 'rubocop-performance'
   gem 'rubocop-rails'
