@@ -1,15 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html class="w-full h-full">
   <head>
-    <title>TelegramBotApp</title>
+    <title>FastParking</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <%= javascript_pack_tag 'application' %>
+    <%= stylesheet_pack_tag 'application' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
-  <body>
-    <%= yield %>
+  <body class="w-full h-full">
+    <div id="vue-app" class="w-full h-full">
+      <div class="flex flex-col w-full h-full">
+        <div class="flex-grow w-full h-full">
+          <span class="text-green-500"> hola</span>
+          <%= yield %>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

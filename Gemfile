@@ -22,6 +22,7 @@ gem 'turbolinks', '~> 5'
 
 gem 'power_api'
 gem 'telegram-bot', '~> 0.14.4'
+gem 'webpacker'
 
 group :development, :test do
   gem 'factory_bot_rails'
