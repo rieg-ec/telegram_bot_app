@@ -28,9 +28,12 @@ import {
 
 import '../css/application.css';
 
+import ParkingSlots from '../src/components/parking-slots.vue';
+
 Vue.filter('camelizeKeys', (value) => camelizeKeys(value));
 
 Vue.component('font-awesome-icon', FontAwesomeIcon);
+Vue.component('parking-slots', ParkingSlots);
 
 library.add(faCaretLeft, fasStar, farStar, faStarHalfAlt);
 
